@@ -1,0 +1,8 @@
+- name: "Play 1- trianz website configuration"  
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Install the latest version of git
+      yum:
+        name: git
+        state: latest
